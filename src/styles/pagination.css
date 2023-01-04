@@ -1,0 +1,31 @@
+.pagination-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.pagination-previous{
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #841607;
+}
+.pagination-pages{
+    padding: 10px;
+    background-color: #010009;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.pagination-page-active{
+    background-color: #ff6b59;
+}
+.pagination-break{
+    color: #fff;
+    background-color: rgba(255, 243, 243, 0.181);
+    cursor: pointer;
+}
