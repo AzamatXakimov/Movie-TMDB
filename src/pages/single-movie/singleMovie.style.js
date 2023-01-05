@@ -76,6 +76,7 @@ export const SingleMovieReliseCompanys = styled.h3`
 export const SingleMovieCompanyList = styled.ul`
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 0px;
     margin-bottom: 50px;
     padding-left: 0;
