@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import WatchIcon from "../../assets/images/vatch-icon.svg"
 export const SingleMovieWrapper = styled.div`
@@ -14,7 +15,13 @@ export const SingleMoviesWrapperOverlay = styled.div`
     background-color: rgba(0, 0, 0, 0.53);
     box-shadow: inset 0px 4px 218px rgba(0, 0, 0, 0.75);
     /* backdrop-filter: blur(34px); */
-`
+`;
+
+export const SingleMoviesInnerBox = styled.div`
+    position: relative;
+` 
+
+
 export const SingleMovieInner = styled.div`
     display: flex;
     align-items: flex-start;
@@ -174,12 +181,36 @@ export const StyledMovieStatus = styled.span`
 
 // `
 
+export  const StyledSingleMovieText = styled.h3`
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 40px;
 
-export const StyledCastsItems = styled.div`
+    color: #fff;
+`
+
+export const StyledCastsList = styled.ul`
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+`
+
+export const StyledCastsItems = styled.li`
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
 `;
+
+export const StyledCastsLink = styled(Link)`
+    text-decoration: none;
+`
 
 export const  StyledCastsImg = styled.img`
     display: inline-block;
@@ -195,12 +226,34 @@ export const StyledCastsTitle = styled.h3`
     margin-top: 0;
     margin-bottom: 11px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     /* color: #fff; */
 `
 export const StyledCastsDesc = styled.p`
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 10px;
+    font-size: 20px;
     /* color: #fff; */
+`;
+
+export const ModalBody = styled.div`
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    left: calc(50%);
+    transform: translateX(-50%);
+    justify-content: center;
+
+`
+export const ModalBodyInner = styled.div`
+    padding: 45px;
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(14px);
+`
+export const CloseModalBtn = styled.button`
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
 `
